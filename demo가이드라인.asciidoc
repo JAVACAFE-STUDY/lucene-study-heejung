@@ -1,0 +1,30 @@
+# demo 가이드라인
+
+## 환경설정
+
+- 간단한 명령 프롬트형 예제이므로 별도의 maven등의 빌드툴을 사용하지는 않았습니다
+
+- src/org/apache/lucene/demo/lib 하위의 2개 라이브러리를 실행환경에 추가해주세요.
+[source]
+1. lucene-core-6.3.0.jar
+2. lucene-queryparser-6.3.0.jar
+ 
+- 예제 실행전 간단한 뉴스같은 텍스트 파일을 특정경로에 넣어두세요.
+[source]
+예) C:\study\luceneTestData\index\docs\text.txt
+
+## 예제 실행
+
+- IndexFiles.java 파일 실행시 argument 추가 필요
+[source]
+java org.apache.lucene.demo.IndexFiles -index C:\study\luceneTestData\index -docs C:\study\luceneTestData\index\docs -update
+(여기에서는 -index C:\study\luceneTestData\index -docs C:\study\luceneTestData\index\docs -update 가 argument입니다)
+
+- SearchFiles.java 파일 실행시 
+[source]
+java org.apache.lucene.demo.SearchFiles -index C:\study\luceneTestData\index
+(여기에서는 -index C:\study\luceneTestData\index 가 argument입니다)
+
+## 참고 사이트
+[source]
+http://lucene.apache.org/core/6_3_0/demo/overview-summary.html#overview_description

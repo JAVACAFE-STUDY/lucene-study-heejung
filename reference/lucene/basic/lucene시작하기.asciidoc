@@ -2,12 +2,16 @@
 - IndexWriter : 색인 생성, 추가, 삭제 역할
 - Directory : 루씬의 색인 저장 공간
 - Analyzer
+  * 추상클래스
+  * 지정된 텍스트를 색인할 단위 단어로 분리하고 필요 없는 단어를 제거하는 등의 역할을 함
+  * 참고) Tika : 여러종류의 문서에서 본문 텍스트 추출
 - Document
+  * 개별 필드의 집합
 - Filed
 
 ## 검색 관련 핵심 클래스
 - IndexSearcher : 검색 담당 클래스
 - Term
 - Query
-- TermQuery
+- TermQuery : 루씬이 지원하는 질의 중 가장 기본적인 기능 가짐
 - TopDocs

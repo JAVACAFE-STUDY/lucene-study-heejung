@@ -241,13 +241,13 @@ Indices created in Elasticsearch 2.x or before will need to be reindexed with El
 
 * PrefixAwareTokenStream이 ConcatenatingTokenStream 로 대체되었습니다. (PrefixAwareTokenStream / PrefixAndSuffixAwareTokenStream은 더 이상 사용되지 않고 손상된 Token 클래스를 사용했었음)
 
-  ​
+  
 
 ## LUCENE-7867
 
 * 이제는 deprecated 된 Token 클래스가 테스트 프레임 워크 (Alan Woodward, Adrien Grand) 에서만 사용 가능합니다.
 
-  ​
+  
 
 ## LUCENE-7723
 
@@ -280,7 +280,7 @@ Indices created in Elasticsearch 2.x or before will need to be reindexed with El
 
 * 기본 코덱을 사용하여 sparse doc-values 더 나은 저장을 할 수 있음
 
-##LUCENE-7730
+## LUCENE-7730
 
 * index-time boosts가 삭제되면서 긴 정규화 요소의 더 정확한 encoding 가능
 * More accurate encoding of the length normalization factor thanks to the removal of index-time boosts. 
